@@ -21,7 +21,7 @@ let handler = async (m, { conn, isAdmin, isOwner, args, usedPrefix, command }) =
 •${usedPrefix + command} close 1*
 📌 *_Ejemplo de uso:_* *${usedPrefix + command} close 1*
 *_🌿 Para que el grupo este cerrado una hora._*
-⬒─⟢⟨©𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰✍⟩⟣─⬒`
+⬒─⟢⟨PolBot⟩⟣─⬒`
       m.reply(caption)
 	  throw false
   }
@@ -32,7 +32,7 @@ let handler = async (m, { conn, isAdmin, isOwner, args, usedPrefix, command }) =
   if (args[1]) {
 	 setTimeout(async () => {
             await conn.groupSettingUpdate(m.chat, `${isClose == 'announcement' ? 'not_announcement' : 'announcement'}`).then(async _=>{
-		    conn.reply(m.chat, `${isClose == 'not_announcement' ? '*El grupo ha sido cerrado, ¡ahora solo los administradores pueden enviar mensajes!*\n\n\n The group has been closed, now only admins can send messages!*' : '*El grupo se ha abierto, ¡ahora todos los miembros pueden enviar mensajes!*\n\n\n The group has been opened, now all members can send messages!*'}!`)
+		    conn.reply(m.chat, `${isClose == 'not_announcement' ? '*El grupo ha sido cerrado, ¡ahora solo los administradores pueden enviar mensajes!*' : '*El grupo se ha abierto, ¡ahora todos los miembros pueden enviar mensajes!*'}!`)
 	    })
         }, timeoutset)
   }
