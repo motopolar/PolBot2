@@ -17,14 +17,14 @@ let readMore = more.repeat(850)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let str = `⟥⟝⟢⟨ *𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰* ⟩⟣⟞⟤
+let str = `⟥⟝⟢⟨ *PolBot* ⟩⟣⟞⟤
 ➟ *𝗛ᴏʟᴀ,➟${taguser}*
-➟ *ᴏᴡɴᴇʀ:ᴏғᴄ➟ʏᴏᴠᴀɴɪ*
+➟ *ᴏᴡɴᴇʀ:Pol*
 ➟ *ғᴇᴄʜᴀ:➟${date}*
 ➟ *ᴛɪᴇᴍᴘᴏ:➟${uptime}* 
 ➟ *ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}*
 ➟ *ᴄᴜᴇɴᴛᴀs ᴏғᴄ:* *https://atom.bio/ofc_yovani_hades*
-⬒ ─⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⟣─ ⬒
+⬒ ─⟢⟨PolBot)⟣─ ⬒
 
 ⬒ ─⟢⟨ *STICKERS* ⟩⟣─ ⬒
 ➟ *.stiker2 con una imagen o link*
@@ -36,7 +36,7 @@ let str = `⟥⟝⟢⟨ *𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻�
 ➟ *.pat*
 ➟ *.emojimix ☺&😈*
 ➟ *.dados*
-⬒─⟢⟨©𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰✍⟩⟣─⬒`.trim()
+⬒─⟢⟨PolBot⟩⟣─⬒`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  
