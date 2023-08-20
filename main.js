@@ -39,7 +39,7 @@ global.videoListXXX = [];
 const __dirname = global.__dirname(import.meta.url)
 
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
-global.prefix = new RegExp('^[' + (opts['prefix'] || '*/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-.@aA').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
+global.prefix = new RegExp('^[' + (opts['prefix'] || '*/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-.').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
 
 global.db = new Low(/https?:\/\//.test(opts['db'] || '') ? new cloudDBAdapter(opts['db']) : new JSONFile(`${opts._[0] ? opts._[0] + '_' : ''}database.json`))
 
@@ -218,10 +218,7 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '⟥⟝⟢⟨*@user*⟩⟣⟞⟤\n• *¡Hola, querido/a @user! 🌟
-
-• *Bienvenido/a al asombroso mundo de @subject* 😎 /n • *Por favor, disfruta de las maravillas que ofrece este rincón de la comunidad para que explores serenamente el grupo para que encuentres tenor* 🍀 /n • *@desc*
-⬒─⟢⟨©PolBot⟩⟣─⬒'
+conn.welcome = '⟥⟝⟢⟨*@user*⟩⟣⟞⟤\n• *¡Hola, querido/a @user! 🌟 /n • *Bienvenido/a al asombroso mundo de @subject* 😎 /n • *Por favor, disfruta de las maravillas que ofrece este rincón de la comunidad para que explores serenamente el grupo para que encuentres tenor* 🍀 /n • *@desc* /n ⬒─⟢⟨©PolBot⟩⟣─⬒'
 conn.bye = ⟥⟝⟢⟨*Bye*⟩⟣⟞⟤ /n • *Chanfles, @user se ha ido.*⟩⟣─
 conn.spromote = '¡@user ha demostrado su valía y ahora forma parte del grupo de admins!*'
 conn.sdemote = '*PolBot y los administradores decimos adiós a @user, que ha abandonado el grupo de admins.*'
