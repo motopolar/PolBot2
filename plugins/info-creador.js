@@ -3,15 +3,8 @@ var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.present
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let text = `⟥⟝⟢⟨ *owner* ⟩⟣⟞⟤
 
-• Wa.me/5212412377467 (CREADOR)
-
-• Wa.me/5212411261883 (CREADOR)
-
-• Wa.me/5212411719888 (CREADOR)
-
-⬒─⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⟣─⬒`.trim()   
+⬒─⟢(PolBot⟩⟣─⬒`.trim()   
 let buttonMessage= {
-'document': { url: `https://github.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA.git` },
 'mimetype': `application/${document}`,
 'fileName': `*⫷᭄HATSUNE-MIKU-ULTRA✍*`,
 'fileLength': 99999999999999,
@@ -20,7 +13,7 @@ let buttonMessage= {
 'forwardingScore': 200,
 'isForwarded': true,
 'externalAdReply': {
-'mediaUrl': 'https://github.com/OFC-YOVANI/HADES-BOT-OMEGA',
+'mediaUrl': 'https://github.com/motopolar/PolBot2',
 'mediaType': 2,
 'previewType': 'pdf',
 'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
