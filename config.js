@@ -8,13 +8,14 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.owner = [
-  ['5212411719888', '𝙾𝙵𝙲 𝚈𝙾𝚅𝙰𝙽𝙸', true],
-  ['5212412377467', '𝙾𝙵𝙲 𝚈𝙾𝚅𝙰𝙽𝙸', true],
+  ['526631621048', 'Polar', true],
+  ['5216642320237', 'Skipper', true],
+  ['5215610180892', 'Dillan', true],
 ];
-global.suittag =['5212412477467'];
+global.suittag =['5216631621048'];
 global.mods = []
-global.prems = ['5212412474767'];
-global.reportes_solicitudes = ['5212412377467'];
+global.prems = ['5216631621048'];
+global.reportes_solicitudes = ['5216631621048'];
 
 global.openai_key = 'sk-0';
 
@@ -56,11 +57,11 @@ global.APIKeys = {
   'https://api.itsrose.site': 'Rs-Zeltoria',
   'https://api-xcoders.site': 'Frieren',
 };
-global.packname = '⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒'
-global.author = '⬒⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⬒'
+global.packname = 'PolBot'
+global.author = 'Polar'
 global.vs = '1.10.90'
 global.version = vs
-global.gt = '⬒⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⬒'
+global.gt = 'PolBot'
 global.hadesbot = gt
 global.yt = 'https://youtu.be/aPu9wQi-z8U'
 global.youtube = yt
@@ -74,24 +75,24 @@ global.nnn = 'https://chat.whatsapp.com/DDm7HC6e5MF9qcdLqB22RQ'
 global.nnngrupo = nnn
 global.paypal = 'https://pay'
 global.donar = paypal
-global.rg = '*🍀ʀᴇsᴜʟᴛᴀᴅᴏ ᴇɴᴄᴏɴᴛʀᴀᴅᴏ✨*'
+global.rg = 'Ay Caray. No he encontrado nada.'
 global.resultado = rg
-global.ag = '*⚠️ᴀᴅᴠᴇʀᴛᴇɴᴄɪᴀ⚠️*'
+global.ag = '⚠️'
 global.advertencia = ag
-global.iig = '*📌ɪɴғᴏʀᴍᴀᴄɪᴏɴ*✨'
+global.iig = 'Info! ✨'
 global.informacion = iig
-global.fg = '*❌ʟᴏ sᴇɴᴛɪᴍᴏs sᴇ ʜᴀ ɢᴇɴᴇʀᴀᴅᴏ ᴜɴ ᴇʀʀᴏʀ ᴠᴜᴇʟᴠᴇ ɪɴᴛᴇɴᴛᴀʀ❌*'
+global.fg = 'Estoy teniendo problemas :('
 global.fallo = fg
-global.mg = '*❗ᴇsᴛᴇ ᴄᴏᴍᴀɴᴅᴏ ʟᴏ ʜᴀ ᴜsᴀᴅᴏ ɪɴᴄᴏʀʀᴇᴄᴛᴀᴍᴇɴᴛᴇ*'
+global.mg = 'Mal, mal. Has usado el comando incorrectamente.'
 global.mal = mg
-global.eeg = '*📩ˢᵁ ᴿᴱᴾᴼᴿᵀᴱ ᴴᴬ ˢᴵᴰᴼ ᴱᴺⱽᴵᴬᴰᴼ📩*'
+global.eeg = 'Ya he enviado el reporte a mis creadores.'
 global.envio = eeg
-global.eg = '*🍀ʀᴇsᴜʟᴛᴀᴅᴏ ᴇɴᴄᴏɴᴛʀᴀᴅᴏ✨*'
+global.eg = '¡He encontrado el resultado!'
 global.exito = eg
 
-global.wm = '⬒⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⬒\n⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒'
-global.igfg = '⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒'
-global.wait = '⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱'
+global.wm = 'PolBot\nPolBot'
+global.igfg = 'PolBot'
+global.wait = 'Dame un momento...\n▰▰▰▰══════'
 
 global.imagen1 = fs.readFileSync('./lib/img/descargas.jpg')
 global.imagen2 = fs.readFileSync('./lib/img/nuevobot.jpg') 
