@@ -219,7 +219,7 @@ conn.ev.off('creds.update', conn.credsUpdate)
 }
   
 conn.welcome = '⟥⟝⟢⟨*@user*⟩⟣⟞⟤\n• *¡Hola, querido/a @user! 🌟 /n • *Bienvenido/a al asombroso mundo de @subject* 😎 /n • *Por favor, disfruta de las maravillas que ofrece este rincón de la comunidad para que explores serenamente el grupo para que encuentres tenor* 🍀 /n • *@desc* /n ⬒─⟢⟨©PolBot⟩⟣─⬒'
-conn.bye = ⟥⟝⟢⟨*Bye*⟩⟣⟞⟤ /n • *Chanfles, @user se ha ido.*⟩⟣─
+conn.bye = '⟥⟝⟢⟨*Bye*⟩⟣⟞⟤ /n • *Chanfles, @user se ha ido.*⟩⟣─'
 conn.spromote = '¡@user ha demostrado su valía y ahora forma parte del grupo de admins!*'
 conn.sdemote = '*PolBot y los administradores decimos adiós a @user, que ha abandonado el grupo de admins.*'
 conn.sDesc = 'Se ha modificado la descripción del grupo ;) /n @descp'
