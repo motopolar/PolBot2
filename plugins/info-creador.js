@@ -6,7 +6,7 @@ let text = `⟥⟝⟢⟨ *owner* ⟩⟣⟞⟤
 ⬒─⟢(PolBot⟩⟣─⬒`.trim()   
 let buttonMessage= {
 'mimetype': `application/${document}`,
-'fileName': `*⫷᭄HATSUNE-MIKU-ULTRA✍*`,
+'fileName': `*PolBot*`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
