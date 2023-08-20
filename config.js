@@ -8,9 +8,7 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.owner = [
-  ['526631621048', 'Polar', true],
-  ['5216642320237', 'Skipper', true],
-  ['5215610180892', 'Dillan', true],
+  ['526631621048', 'Polar', true]
 ];
 global.suittag =['5216631621048'];
 global.mods = []
