@@ -1129,9 +1129,9 @@ if (m.text && user.banned && !isROwner) {
   
   if (user.bannedMessageCount < 3) {
     const messageNumber = user.bannedMessageCount + 1;
-    const messageText = `❰ ⚠️ ❱ *ESTAS BANEADO/A* ❰ ⚠️ ❱\nAviso ${messageNumber}/3 (${messageNumber} de 3)${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
-*👉 Puedes contactar a la propietaria del Bot si crees que se trata de un error (TENER PRUEBAS) para tratar el motivo de tú desbaneo*
-👉 wa.me/5212412377467
+    const messageText = `Ey traviesillo, por alguna razón mi creador te baneó. 😂\nAviso ${messageNumber}/3 (${messageNumber} de 3)${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
+👉 Habla con el creador para solicitar tu desbaneo.
+👉 wa.me/5216631621048
 `.trim();
     
     //m.reply(messageText);
@@ -1213,7 +1213,7 @@ if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - 
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `✨ᴴᵒˡᵃ ᵉˢᵗⁱᵐᵃᵈᵒ ˡᵒ ˢⁱᵉⁿᵗᵒ ᵖᵉʳᵒ ᵗᵘˢ 💎ᵈⁱᵃᵐᵃⁿᵗᵉˢ ˢᵉ ᵗᵉ ʰᵃⁿ ᵃᵍᵒᵗᵃᵈᵒ ˢⁱ ᵈᵉˢᵉᵃˢ ˢᵉᵍᵘⁱʳ ᵘˢᵃⁿᵈᵒ ᵉˡ ᵇᵒᵗ ᵖᵘᵉᵈᵉˢ ⁱʳ ᵃ ˡᵃ 🛒ᵗⁱᵉⁿᵈᵃ ᵈᵉ 💎ᵈⁱᵃᵐᵃⁿᵗᵉˢ ᶜᵒⁿ ᵉˡ ᶜᵒᵐᵃⁿᵈᵒ\n🛒/ˢʰᵒᵖ\n\n✨ˢⁱ ᵗᵉ ⁱⁿᵗᵉʳᵉˢᵃ ᶜᵒᵐᵖʳᵃʳ ᵘⁿ ᵖᵉʳᵐⁱᵘᵐ ᵖᵃʳᵃ qᵘᵉ ᵉˡ ᵇᵒᵗ ⁿᵒ ᵗᵉ ᶜᵒᵇʳᵉ 💎ᵈⁱᵃᵐᵃⁿᵗᵉˢ ᵖᵘᵉᵈᵉˢ ⁱʳ ᵃˡ 🪙ᵗⁱᵉⁿᵈᵃ ᶜᵒⁿ ᵉˡ ᶜᵒᵐᵃⁿᵈᵒ\n🛒/ˢᵉˡˡ`, m)
+                    this.reply(m.chat, `Adivina qué. ¡Ya no tienes diamantes! 🤣\nCompra más o pídele a Pol, es muy amable. 🤪`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
@@ -1273,7 +1273,7 @@ if (botSpam.antispam && m.text && user && user.lastCommandTime && (Date.now() - 
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' 𝐃𝐈𝐀𝐌𝐀𝐍𝐓𝐄 💎 𝐔𝐒𝐀𝐃𝐎')
+                        m.reply(+m.limit + ' Diamante usado. 💎)
                 }
                 break
             }
@@ -1366,7 +1366,7 @@ if (userPrefix && chat.antiArab && botTt.restrict && isBotAdminNn && action === 
  let responseb = await this.groupParticipantsUpdate(id, [user], 'remove')
      if (responseb[0].status === "404") return 
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }      
-this.sendMessage(id, { text: `*[❗] @${user.split('@')[0]} ᴇɴ ᴇsᴛᴇ ɢʀᴜᴘᴏ ɴᴏ sᴇ ᴘᴇʀᴍɪᴛᴇɴ ɴᴜᴍᴇʀᴏs ᴀʀᴀʙᴇs ᴏ ʀᴀʀᴏs, ᴘᴏʀ ʟᴏ ϙᴜᴇ sᴇ ᴛᴇ sᴀᴄᴀʀᴀ ᴅᴇʟ ɢʀᴜᴘᴏ*`, mentions: [user] }, { quoted: fkontak2 });          
+this.sendMessage(id, { text: `*[❗] @${user.split('@')[0]} Este grupo tiene restringida la entrada a números árabes o desconocidos. Lo siento.*`, mentions: [user] }, { quoted: fkontak2 });          
 return    
 }    
 			    
@@ -1416,8 +1416,8 @@ export async function callUpdate(callUpdate) {
     if (nk.status == "offer") {
     let callmsg = await this.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, { mentions: [nk.from] })
     
-   let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒;;;\nFN:⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒\nORG:⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒\nTITLE:\nitem1.TEL;waid=5212412377467:+521 241 237 7467\nitem1.X-ABLabel:⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:⬒⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⬒\nEND:VCARD`
-    await this.sendMessage(nk.from, { contacts: { displayName: '⬒⟢⟨©ᴏғᴄ-ʏᴏᴠᴀɴɪ﹏✍⟩⬒', contacts: [{ vcard }] }}, {quoted: callmsg})
+   let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⬒⟢⟨𝙿𝚘𝚕𝙱𝚘𝚝⟩⟣⬒;;;\nFN:⬒⟢⟨𝙿𝚘𝚕𝙱𝚘𝚝𝙰⟩⟣⬒\nORG:⬒⟢⟨𝙿𝚘𝚕𝙱𝚘𝚝⟩⟣⬒\nTITLE:\nitem1.TEL;waid=13658004458:+1 365 800 4458\nitem1.X-ABLabel:⬒⟢⟨𝙿𝚘𝚕𝙱𝚘𝚝⟩⟣⬒\nX-WA-BIZ-DESCRIPTION:[❗] Contacta a este número únicamente para cosas importantes.\nX-WA-BIZ-NAME:⬒⟢⟨𝙿𝚘𝚕𝙱𝚘𝚝⟩⬒\nEND:VCARD`
+    await this.sendMessage(nk.from, { contacts: { displayName: 'PolBot', contacts: [{ vcard }] }}, {quoted: callmsg})
     await this.updateBlockStatus(nk.from, 'block')
     }
     }
@@ -1454,16 +1454,16 @@ export async function deleteUpdate(message) {
 
 global.dfail = (type, m, conn) => {
     let msg = { 
-       rowner: '[⚠️ᵃᵛⁱˢᵒ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️] \nᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ˢᵒˡᵒ ᴾᵘᵉᵈᵉ ˢᵉʳ ᵁᵗⁱˡⁱᶻᵃᵈᵒ ᴾᵒʳ ᴱˡ/ᴸᵃ ᴾʳᵒᵖⁱᵉᵗᵃʳⁱᵒ (ᵒʷⁿᵉʳ) ᴰᵉˡ ᴮᵒᵗ',
-       owner: '[⚠️ᵃᵛⁱˢᵒ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️] \nᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ˢᵒˡᵒ ᴾᵘᵉᵈᵉ ˢᵉʳ ᵁᵗⁱˡⁱᶻᵃᵈᵒ ᴾᵒʳ ᴱˡ/ᴸᵃ ᴾʳᵒᵖⁱᵉᵗᵃʳⁱᵒ (ᵒʷⁿᵉʳ) ᴰᵉˡ ᴮᵒᵗ',
-       mods: '[⚠️ᵃᵛⁱˢᵒ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️]\nᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ˢᵒˡᵒ ᴾᵘᵉᵈᵉ ˢᵉʳ ᵁᵗⁱˡⁱᶻᵃᵈᵒ ᴾᵒʳ ᴹᵒᵈᵉʳᵃᵈᵒʳᵉˢ ʸ ᴱˡ/ᴸᵃ ᴾʳᵒᵖⁱᵉᵗᵃʳⁱᵒ/ᴬ (ᵒʷⁿᵉʳ) ᴰᵉˡ ᴮᵒᵗ',
-       premium: '[⚠️ᵃᵛⁱˢᵒ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️]\nᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ˢᵒˡᵒ ᴾᵘᵉᵈᵉ ˢᵉʳ ᵁᵗⁱˡⁱᶻᵃᵈᵒ ᴾᵒʳ ᴸᵒˢ ᵁˢᵘᵃʳⁱᵒˢ ᴾʳᵉᵐⁱᵘᵐ ʸ ᴱˡ/ᴸᵃ ᴾʳᵒᵖⁱᵉᵗᵃʳⁱᵒ/ᴬ (ᵒʷⁿᵉʳ) ᴰᵉˡ ᴮᵒᵗ',
-       group: '[⚠️ᵃᵛⁱˢᵒ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️]\nᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ˢᵒˡᵒ ᴾᵘᵉᵈᵉ ˢᵉʳ ᵁᵗⁱˡⁱᶻᵃᵈᵒ ᴱⁿ ᴳʳᵘᵖᵒˢ',
-       private: '[⚠️ᵃᵛⁱˢᵒ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️]\nᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ˢᵒˡᵒ ᴾᵘᵉᵈᵉ ˢᵉʳ ᵁᵗⁱˡⁱᶻᵃᵈᵒ ᴱⁿ ᴱˡ ᶜʰᵃᵗ ᴾʳⁱᵛᵃᵈᵒ ᴰᵉˡ ᴮᵒᵗ',
-       admin: '[⚠️ᵃᵛⁱˢᵒ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️]\nᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ˢᵒˡᵒ ᴾᵘᵉᵈᵉ ˢᵉʳ ᵁᵗⁱˡⁱᶻᵃᵈᵒ ᴾᵃʳᵃ ˢᵒˡᵒ ᴬᵈᵐⁱⁿⁱˢᵗʳᵃᵈᵒʳᵉˢ ᴰᵉˡ ᴳʳᵘᵖᵒˢ',
-       botAdmin: '[⚠️ᵃᵛⁱˢᵒ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️]\nᴾᵃʳᵃ ᴾᵒᵈᵉʳ ᵁˢᵃʳ ᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ᴱˢ ᴺᵉᶜᵉˢᵃʳⁱᵒ Qᵘᵉ ᴱˡ ᴮᵒᵗ ˢᵉᵃ ᴬᵈᵐⁱⁿⁱˢᵗʳᵃᵈᵒʳ ʸ ᴬᶜᶜᵉᵈᵉʳ ᴬᵈᵐⁱⁿ ᴬ ᴱˢᵗᵉ ᴺᵘᵐᵉʳᵒ',
-       unreg: '✨ᴴᵒˡᵃ ᵇⁱᵉⁿᵛᵉⁿⁱ@ ᵃ ⁿᵘᵉˢᵗʳᵃ 💯ᶜᵒᵐᵘⁿⁱᵈᵃᵈ ᵈᵉ ᴴᵃᵈᵉˢ-ᵇᵒᵗ ᵖᵃʳᵃ ᵖᵒᵈᵉʳ ᵘˢᵃʳ ˡᵒˢ ᶜᵒᵐᵃⁿᵈᵒˢ ᵈᵉˡ ᵇᵒᵗ ᵉˢ ⁿᵉᶜᵉˢᵃʳⁱᵒ qᵘᵉ ᵗᵉ ᵉⁿᶜᵘᵉⁿᵗʳᵉˢ\n📃ʳᵉᵍⁱˢᵗʳᵃᵈᵒ ᵉⁿ ᵐⁱ ᵇᵃˢᵉ ᵈᵉ ᵈᵃᵗᵒˢ ᵖᵃʳᵃ ʳᵉᵍⁱˢᵗʳᵃʳᵗᵉ ᵘˢᵃ ˡᵒˢ ᶜᵒᵐᵃⁿᵈᵒˢ ˢⁱᵍᵘⁱᵉⁿᵗᵉˢ\n\n🪪/ʳᵉᵍ ⁿᵒᵐᵇʳᵉ.ᵉᵈᵃᵈ\nᵁⁿᵒ ᵉʲᵉᵐᵖˡᵒ\n🪪/ᴿᵉᵍ ᴴᵃᵈᵉˢ.²²\n\n📌ᴱˢᵖᵉʳᵒ qᵘᵉ ʰᵃʸᵃˢ ᵉⁿᵗᵉⁿᵈⁱᵈᵒ ʸ ᵖᵘᵉᵈᵃˢ ˢᵉʳ ʳᵉᵍⁱˢᵗʳᵃᵈᵒ ᵉⁿ ᵐⁱ ᵇᵃˢᵉ ᵈᵉ ᵈᵃᵗᵒˢ ᵖᵃʳᵃ qᵘᵉ ᵖᵘᵉᵈᵃˢ ʰᵃᶜᵉʳ ᵘˢᵒ ᵈᵉˡ ᵇᵒᵗ🪀',
-       restrict: '[⚠️ᴬˡᵉʳᵗᵃ ⁱᵐᵖᵒʳᵗᵃⁿᵗᵉ⚠️]\nᴱˢᵗᵉ ᶜᵒᵐᵃⁿᵈᵒ ᴱˢᵗᵃ ᴿᵉˢᵗʳⁱⁿᵍⁱᵈᵒ/ᴰᵉˢᵃᶜᵗⁱᵛᵃ ᴾᵒʳ ᴰᵉˢⁱᶜⁱᵒⁿ ᴰᵉˡ ᴾʳᵒᵖⁱᵉᵗᵃʳⁱᵒ/ᴬ (ᵒʷⁿᵉʳ) ᴰᵉˡ ᴮᵒᵗ'
+      rowner: 'Eyy traviesillo, este comando es solo para mis creadores.',
+       owner: 'Eyy traviesillo, este comando es solo para mis creadores.t',
+       mods: '[⚠️Importante⚠️]\nEste comando solo puede ser Utilizado por Moderadores y El/La Propietario/A (owner) Del Bot',
+       premium: 'Solo usuarios premium y el creador, lo siento ;)',
+       group: 'Este comando solo puedes usarlo en grupos :)',
+       private: 'Aquí no. 😏 /nEste comando solo puede ser utilizado por privado.',
+       admin: '¡Abusón! 🤣 Este comando solo pueden usarlo los administradores del grupo.',
+       botAdmin: 'Ajá y por arte de magia lo hago. /nNecesito admin para hacer esto. 🙄 (con cariño)',
+       unreg: '✨Hola bienvenid@ a nuestra comunidad de Usuarios de PolBot. Para poder utilizar los comandos del bot, es necesario que te encuentres\n📃registrado en mi base de datos. Para registrarte, utiliza los siguientes comandos:\n\n🪪/reg nombre.edad\nPor ejemplo:\n🪪/Reg Pol.16\n\n📌Espero que hayas entendido y puedas ser registrado en mi base de datos para que puedas hacer uso del bot🪀',
+       restrict: 'Chanfles. El creador deicidió desactivar este comando. 😪'
       }[type]
     let aa = { quoted: m, userJid: conn.user.jid }
     let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: '[ ⚠ ] 𝐀𝐕𝐈𝐒𝐎 - 𝐀𝐋𝐄𝐑𝐓𝐀', body: '⬒⟢⟨𝙷𝙰𝚃𝚂𝚄𝙽𝙴-𝙼𝙸𝙺𝚄-𝚄𝙻𝚃𝚁𝙰⟩⟣⬒', thumbnail: imagen1, sourceUrl: 'https://github.com/OFC-YOVANI/HATSUNE-MIKU-ULTRA.git' }}}}, aa)
