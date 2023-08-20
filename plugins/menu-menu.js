@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
     if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
-    if (m.sender == '5216631621048') {
+    if (m.sender == 'global.owner') {
         try {
             let pp = imagen5;
             let img =  './lib/img/Menu.jpg';
